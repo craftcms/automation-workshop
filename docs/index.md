@@ -1,1 +1,1 @@
-## Automate More, Worry Less
+# Automate More, Worry Less
