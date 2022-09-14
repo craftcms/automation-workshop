@@ -6,3 +6,4 @@
 - [DDEV](https://ddev.com/)
 - Git CLI or GUI client
 - Editor/IDE ([PhpStorm](https://www.jetbrains.com/phpstorm/) recommended)
+- A sunny disposition ☀️
