@@ -4,18 +4,11 @@
 - [Husky](https://github.com/typicode/husky)
 - [Prettier](https://prettier.io/)
 
+## Install Prettier
+
 ```shell
-npm init
-npx husky-init && npm install
-npm install --save-dev lint-staged
 npm install --save-dev --save-exact prettier
-echo '{
-  "**/*.php": [
-    "./vendor/bin/ecs check --ansi --fix",
-    "./vendor/bin/phpstan analyse --memory-limit=1G"
-  ],
-  "*": "prettier --ignore-unknown --write"
-}'> .lintstagedrc.json
+echo '{"singleQuote": true}'> .prettierrc.json
 echo '*.php
 composer.lock
 web/cpresources/*
@@ -23,6 +16,21 @@ storage/*
 templates/*
 vendor/*
 vendor-local/*'> .prettierignore
+```
+
+## Husky & Lint Staged
+
+```shell
+npx husky-init && npm install
+npm install --save-dev lint-staged
+
+echo '{
+  "**/*.php": [
+    "./vendor/bin/ecs check --ansi --fix",
+    "./vendor/bin/phpstan analyse --memory-limit=1G"
+  ],
+  "*": "prettier --ignore-unknown --write"
+}'> .lintstagedrc.json
 ```
 
 Edit `.husky/pre-commit`, replacing `npm test` with:
@@ -34,3 +42,6 @@ PATH="/usr/local/bin:$PATH"
 
 npx lint-staged
 ```
+
+If using Tower, set your Git binary to `usr/local/bin/git`:
+![Tower's Git binary selection](assets/tower-hooks.png)
