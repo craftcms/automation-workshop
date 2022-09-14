@@ -5,3 +5,4 @@ storage/*
 templates/*
 vendor/*
 vendor-local/
+*.html
