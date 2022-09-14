@@ -1,0 +1,22 @@
+dateModified: 1663168503
+email:
+  fromEmail: tim@craftcms.com
+  fromName: 'Automation Workshop'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    aaa1af88-a5c1-45ef-a972-c05e41148eb2: 'Automation Workshop'
+    d527ecd7-601c-4525-9238-9d4b0c7d299c: Common
+    e6ad8d12-8c8d-46c2-be29-d724d6ef468a: 'Automation Workshop'
+system:
+  edition: solo
+  live: true
+  name: 'Automation Workshop'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
