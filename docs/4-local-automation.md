@@ -1,7 +1,8 @@
-# Husky
+# Local Automation
 
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Husky](https://github.com/typicode/husky)
+- [Prettier](https://prettier.io/)
 
 ```shell
 npm init
@@ -22,4 +23,14 @@ storage/*
 templates/*
 vendor/*
 vendor-local/*'> .prettierignore
+```
+
+Edit `.husky/pre-commit`, replacing `npm test` with:
+
+```shell
+# Add to path for GUIs (Tower, etc.)
+PATH="/usr/local/bin:$PATH"
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+npx lint-staged
 ```
