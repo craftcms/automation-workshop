@@ -44,4 +44,4 @@ npx lint-staged
 ```
 
 If using Tower, set your Git binary to `usr/local/bin/git`:
-![Tower's Git binary selection](assets/tower-hooks.png)
+![Tower's Git binary selection](/automation-workshop/assets/tower-hooks.png)
