@@ -1,5 +1,6 @@
 {
   "require": {
+    "craftcms/apple-news": "*",
     "craftcms/cms": "^4.2.0.2",
     "vlucas/phpdotenv": "^5.4.0"
   },

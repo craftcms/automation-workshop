@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23f56df028c1973c0c3977dcdc6e2540",
+    "content-hash": "528e4d6270297543d3748b1e8bb830fa",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -69,6 +69,53 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "chapter-three/apple-news-api",
+            "version": "0.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chapter-three/AppleNewsAPI.git",
+                "reference": "73fd89ff1e3ad59f362a9e7f3276b40641bf8ec2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chapter-three/AppleNewsAPI/zipball/73fd89ff1e3ad59f362a9e7f3276b40641bf8ec2",
+                "reference": "73fd89ff1e3ad59f362a9e7f3276b40641bf8ec2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "php-curl-class/php-curl-class": "^4.6"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.5.*",
+                "phpdocumentor/phpdocumentor": "~2.8",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ChapterThree\\AppleNewsAPI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Push content to Apple News.",
+            "homepage": "https://github.com/chapter-three/AppleNewsAPI",
+            "keywords": [
+                "api",
+                "apple",
+                "news",
+                "push"
+            ],
+            "support": {
+                "issues": "https://github.com/chapter-three/AppleNewsAPI/issues",
+                "source": "https://github.com/chapter-three/AppleNewsAPI/tree/0.3.11"
+            },
+            "time": "2020-12-21T17:19:11+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -675,6 +722,33 @@
                 }
             ],
             "time": "2022-02-25T21:32:43+00:00"
+        },
+        {
+            "name": "craftcms/apple-news",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/apple-news.git",
+                "reference": "c92ec9a72f47cf13a955714033462ed0900aeb60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/apple-news/zipball/c92ec9a72f47cf13a955714033462ed0900aeb60",
+                "reference": "c92ec9a72f47cf13a955714033462ed0900aeb60",
+                "shasum": ""
+            },
+            "require": {
+                "chapter-three/apple-news-api": "^0.3.9",
+                "league/html-to-markdown": "^4.2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "homepage": "http://github.com/pixelandtonic/AppleNews",
+            "support": {
+                "issues": "https://github.com/craftcms/apple-news/issues",
+                "source": "https://github.com/craftcms/apple-news/tree/1.0.2"
+            },
+            "time": "2017-12-18T19:52:03+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -2108,6 +2182,92 @@
             "time": "2022-04-13T08:02:27+00:00"
         },
         {
+            "name": "league/html-to-markdown",
+            "version": "4.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/html-to-markdown.git",
+                "reference": "0868ae7a552e809e5cd8f93ba022071640408e88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0868ae7a552e809e5cd8f93ba022071640408e88",
+                "reference": "0868ae7a552e809e5cd8f93ba022071640408e88",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-xml": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mikehaertl/php-shellcommand": "~1.1.0",
+                "phpunit/phpunit": "^4.8|^5.7",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "bin": [
+                "bin/html-to-markdown"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\HTMLToMarkdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Nick Cernis",
+                    "email": "nick@cern.is",
+                    "homepage": "http://modernnerd.net",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "An HTML-to-markdown conversion helper for PHP",
+            "homepage": "https://github.com/thephpleague/html-to-markdown",
+            "keywords": [
+                "html",
+                "markdown"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
+                "source": "https://github.com/thephpleague/html-to-markdown/tree/4.10.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/colinodell",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-07-01T00:34:03+00:00"
+        },
+        {
             "name": "league/oauth2-client",
             "version": "2.6.1",
             "source": {
@@ -2462,6 +2622,66 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "4.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "debe0a89ee1eb9a2f15c0bb63ce8b347130af50d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/debe0a89ee1eb9a2f15c0bb63ce8b347130af50d",
+                "reference": "debe0a89ee1eb9a2f15c0bb63ce8b347130af50d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class is an object-oriented wrapper of the PHP cURL extension.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "json",
+                "php",
+                "requests",
+                "rest",
+                "restful",
+                "web service",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/php-curl-class/php-curl-class/issues",
+                "source": "https://github.com/php-curl-class/php-curl-class/tree/master"
+            },
+            "time": "2016-07-25T19:31:39+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
