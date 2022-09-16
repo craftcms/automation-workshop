@@ -13,7 +13,8 @@ jobs:
       - name: Discord Message Notify
         uses: appleboy/discord-action@0.0.3
         with:
-          color: red
+          color: "#ff0000"
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: ${{ github.repository }} deployed to ${{ github.ref_name }} [${{ github.sha }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+          message: ${{ github.repository }} deployed to ${{ github.ref_name }}
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
