@@ -13,6 +13,9 @@ jobs:
       - name: Discord Message Notify
         uses: appleboy/discord-action@0.0.3
         with:
+          color: red
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: The ${{ github.event_name }} event triggered first step.
+          message:
+            ${{ github.repository }} deployed to ${{ github.head_branch }} |
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
