@@ -14,4 +14,4 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USERNAME: shinybrad
-          DISCORD_AVATAR:
+          DISCORD_AVATAR: https://raw.githubusercontent.com/craftcms/automation-workshop/production/web/assets/shinybrad.png
