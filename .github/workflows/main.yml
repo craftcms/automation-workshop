@@ -1,6 +1,7 @@
 name: Notification on push
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - production
@@ -13,3 +14,5 @@ jobs:
         uses: Ilshidur/action-discord@master
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: "{{ EVENT_PAYLOAD.repository.full_name }} has been deployed to {{ EVENT_PAYLOAD.workflow_run.head_branch }}."
