@@ -1,8 +1,9 @@
 baseUrl: '@web/'
+enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: 'Automation Workshop'
+name: 'Apple Fake News'
 primary: true
-siteGroup: aaa1af88-a5c1-45ef-a972-c05e41148eb2
+siteGroup: aaa1af88-a5c1-45ef-a972-c05e41148eb2 # Automation Workshop
 sortOrder: 1

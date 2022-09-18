@@ -1,0 +1,79 @@
+fieldLayouts:
+  be2cf232-c499-4179-bd32-f7dfad9feeb6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3de4b4df-5589-429c-933b-1a2c12e7bcdd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ef56cbc5-4025-4527-b5e0-738658d937a0 # Short Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45ba2da5-4dd1-4446-b5e7-37cfd79cee00
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d933902b-f4fa-4ad5-8f8d-ae7007c2f35c # Featured Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a052e8b-dd2a-402c-b667-52e2fcfe646f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e957f5b5-7e61-4328-a8c4-c28bd224ec3b # Link URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27cff30d-92ff-4dac-93d8-b08395b1dba2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d591728c-0aa0-4911-aee2-2bfe6f649847
+        userCondition: null
+handle: link
+hasTitleField: true
+name: Link
+section: 00d304c0-b07e-4f56-bc31-76975a06ecb3 # News
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
