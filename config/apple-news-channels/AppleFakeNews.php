@@ -53,6 +53,6 @@ class AppleFakeNews extends BaseChannel
      */
     public function createArticle(Entry $entry): ArticleInterface
     {
-        return new MyNewsArticle($entry);
+        return new AppleFakeNewsArticle($entry);
     }
 }

@@ -12,6 +12,13 @@ use craft\redactor\FieldData as RedactorFieldData;
 
 /**
  * Class AppleFakeNewsArticle
+ *
+ * @property-read array $components
+ * @property-read array $componentLayouts
+ * @property-read array $headerWithFeaturedImage
+ * @property-read array[]|array $componentTextStyles
+ * @property-read array $plainTextHeader
+ * @property-read array|string[][] $componentStyles
  */
 class AppleFakeNewsArticle extends Article
 {
