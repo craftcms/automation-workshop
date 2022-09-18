@@ -1,0 +1,104 @@
+field: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
+fieldLayouts:
+  d3b775eb-0988-4710-9911-ed24789059e4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4edc15d6-7d35-4fb9-af0e-0dd07d4176ba # Pull Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43de91a6-79a4-4234-819d-de832f53b8eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cfda19f6-1110-4779-a1f3-eb3139f6d55b # Position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3128bc7-cc24-43f7-b607-850b23f05814
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d656d5ca-370c-4a7c-8798-054029865f16
+        userCondition: null
+fields:
+  4edc15d6-7d35-4fb9-af0e-0dd07d4176ba: # Pull Quote
+    columnSuffix: ftiedmuu
+    contentColumnType: text
+    fieldGroup: null
+    handle: pullQuote
+    instructions: null
+    name: 'Pull Quote'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cfda19f6-1110-4779-a1f3-eb3139f6d55b: # Position
+    columnSuffix: njbygknw
+    contentColumnType: string
+    fieldGroup: null
+    handle: position
+    instructions: null
+    name: Position
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Center
+            -
+              - value
+              - center
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: pullQuote
+name: 'Pull Quote'
+sortOrder: 4

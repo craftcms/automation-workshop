@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: news
+name: News
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e6ad8d12-8c8d-46c2-be29-d724d6ef468a: # Apple Fake News
+    enabledByDefault: true
+    hasUrls: true
+    template: news/_entry
+    uriFormat: 'news/{slug}'
+type: channel

@@ -1,15 +1,59 @@
-dateModified: 1663168503
+dateModified: 1663300955
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Automation Workshop'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  siteAssets:
+    hasUrls: true
+    name: 'Site Assets'
+    settings:
+      path: '@assetBasePath/site'
+    type: craft\fs\Local
+    url: '@assetBaseUrl/site'
 meta:
   __names__:
-    aaa1af88-a5c1-45ef-a972-c05e41148eb2: 'Automation Workshop'
-    d527ecd7-601c-4525-9238-9d4b0c7d299c: Common
-    e6ad8d12-8c8d-46c2-be29-d724d6ef468a: 'Automation Workshop'
+    00d304c0-b07e-4f56-bc31-76975a06ecb3: News # News
+    1c1599e0-d8b9-4998-ba29-325ca9a07706: Heading # Heading
+    1ee0eb29-ceaf-45d6-b31d-d4335d7d001c: Caption # Caption
+    2c6e9955-32e0-4310-bb8b-8bddb9d83e2f: 'Site Assets' # Site Assets
+    4bf0c4ac-93f4-4124-a602-acf797318279: Position # Position
+    4edc15d6-7d35-4fb9-af0e-0dd07d4176ba: 'Pull Quote' # Pull Quote
+    5a236b1b-00c7-4038-9264-b4e97830be5f: Image # Image
+    5f7e4f6d-4c20-402f-b540-19a74d527a52: Images # Images
+    6a978d79-1a76-491f-9a71-7f0ca9e43efd: Gallery # Gallery
+    7a39f5f8-8818-478a-8784-d69d59fd58c4: Article # Article
+    8fee31db-d190-4758-b1e3-f9a7420aa68a: 'Article Body' # Article Body
+    9dea68d8-b4a3-4f50-b66d-d77ca664129d: 'Pull Quote' # Pull Quote
+    13f97339-0c1c-414a-94ea-0927daa24137: Subheading # Subheading
+    28edd4e2-705d-42cd-a7ef-4335ee740396: 'New Section' # New Section
+    60d2ec68-884d-4556-93c7-059ae103830c: Quote # Quote
+    76d19faa-e79e-4b31-96fb-8b8cfdd6813a: 'Featured?' # Featured?
+    627b9203-93fb-4981-b7fb-f7079c41a453: Image # Image
+    942f10b8-e7c1-4108-9fc2-c0b240787526: Position # Position
+    1943ce5d-58b3-45ca-b9c3-aae2a6d73130: Heading # Heading
+    4340da97-d0fe-4316-81e1-e36d87af24d6: Text # Text
+    54074c51-7ba2-4505-82f3-b87fe64290e6: Text # Text
+    789299f8-0aeb-4555-8ceb-6b8f9a027268: Attribution # Attribution
+    aaa1af88-a5c1-45ef-a972-c05e41148eb2: 'Automation Workshop' # Automation Workshop
+    abc2b959-7a28-4878-b81d-08ac81f3362d: Link # Link
+    c7558099-aeb6-4dae-acad-adea485ea6df: Position # Position
+    cbf2ad31-610c-490c-b71e-c9bcf86a0919: Quote # Quote
+    cfda19f6-1110-4779-a1f3-eb3139f6d55b: Position # Position
+    d527ecd7-601c-4525-9238-9d4b0c7d299c: Common # Common
+    d933902b-f4fa-4ad5-8f8d-ae7007c2f35c: 'Featured Image' # Featured Image
+    e6ad8d12-8c8d-46c2-be29-d724d6ef468a: 'Apple Fake News' # Apple Fake News
+    e56edffe-2920-4056-9e5d-87c5b13fc4c2: Heading # Heading
+    e957f5b5-7e61-4328-a8c4-c28bd224ec3b: 'Link URL' # Link URL
+    ef56cbc5-4025-4527-b5e0-738658d937a0: 'Short Description' # Short Description
+    f9a53aa4-5b6c-4939-964e-49e7bb6d9dd8: 'Section Heading' # Section Heading
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Automation Workshop'
   schemaVersion: 4.0.0.9

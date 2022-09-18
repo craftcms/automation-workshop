@@ -1,0 +1,27 @@
+columnSuffix: skftcfss
+contentColumnType: text
+fieldGroup: d527ecd7-601c-4525-9238-9d4b0c7d299c # Common
+handle: shortDescription
+instructions: 'Short description for use in index regions.'
+name: 'Short Description'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Simple.json
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

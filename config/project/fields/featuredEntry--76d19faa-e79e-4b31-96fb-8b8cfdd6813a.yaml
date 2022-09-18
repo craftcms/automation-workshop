@@ -1,0 +1,14 @@
+columnSuffix: kauxckir
+contentColumnType: boolean
+fieldGroup: d527ecd7-601c-4525-9238-9d4b0c7d299c # Common
+handle: featuredEntry
+instructions: 'Should this entry be featured on the listing page?'
+name: 'Featured?'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
