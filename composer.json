@@ -2,6 +2,7 @@
   "require": {
     "craftcms/cms": "^4.2.0.2",
     "craftcms/redactor": "3.0.2",
+    "craftcms/apple-news": "3.0.x-dev",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -10,7 +11,8 @@
   },
   "autoload": {
     "psr-4": {
-      "modules\\": "modules/"
+      "modules\\": "modules/",
+      "applenewschannels\\": "config/apple-news-channels/"
     }
   },
   "config": {
@@ -29,5 +31,7 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
