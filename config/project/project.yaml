@@ -1,4 +1,4 @@
-dateModified: 1663300955
+dateModified: 1663538497
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Automation Workshop'
@@ -48,6 +48,10 @@ meta:
     ef56cbc5-4025-4527-b5e0-738658d937a0: 'Short Description' # Short Description
     f9a53aa4-5b6c-4939-964e-49e7bb6d9dd8: 'Section Heading' # Section Heading
 plugins:
+  apple-news:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
