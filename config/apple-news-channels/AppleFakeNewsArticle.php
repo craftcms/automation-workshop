@@ -57,7 +57,7 @@ class AppleFakeNewsArticle extends Article
 
         $this->setContent([
             'version' => '1.1',
-            'identifier' => $this->entry->id,
+            'identifier' => (string)$this->entry->id,
             'title' => $this->entry->title,
             //'subtitle' => 'Non occidere quae cumque vi ventia',
             'language' => Helper::formatLanguage($this->entry->site->language),
@@ -73,7 +73,7 @@ class AppleFakeNewsArticle extends Article
                 'dateCreated' => DateTimeHelper::toIso8601($this->entry->dateCreated),
                 'dateModified' => DateTimeHelper::toIso8601($this->entry->dateUpdated),
                 'datePublished' => DateTimeHelper::toIso8601($this->entry->postDate) ?: null,
-                'excerpt' => Helper::stripHtml($this->entry->shortDescription),
+                'excerpt' => $this->entry->shortDescription ? Helper::stripHtml($this->entry->shortDescription) : null,
                 'keywords' => Helper::createKeywords($this->entry, ['shortDescription']),
                 'thumbnailURL' => $this->featuredImageUrl,
             ],
