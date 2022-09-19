@@ -33,11 +33,11 @@ fieldLayouts:
         name: Content
         uid: 65b71133-c775-443f-a596-5eb3f5b0c8ec
         userCondition: null
-fs: siteAssets
-handle: siteAssets
-name: 'Site Assets'
+fs: assets
+handle: Assets
+name: Assets
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: siteAssets
+transformFs: assets
 transformSubpath: ''

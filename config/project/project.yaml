@@ -1,22 +1,22 @@
-dateModified: 1663538497
+dateModified: 1663547074
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Automation Workshop'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
-  siteAssets:
+  assets:
     hasUrls: true
-    name: 'Site Assets'
+    name: Assets
     settings:
-      path: '@assetBasePath/site'
+      path: $ASSET_BASE_PATH
     type: craft\fs\Local
-    url: '@assetBaseUrl/site'
+    url: $ASSET_BASE_URL
 meta:
   __names__:
     00d304c0-b07e-4f56-bc31-76975a06ecb3: News # News
     1c1599e0-d8b9-4998-ba29-325ca9a07706: Heading # Heading
     1ee0eb29-ceaf-45d6-b31d-d4335d7d001c: Caption # Caption
-    2c6e9955-32e0-4310-bb8b-8bddb9d83e2f: 'Site Assets' # Site Assets
+    2c6e9955-32e0-4310-bb8b-8bddb9d83e2f: Assets # Assets
     4bf0c4ac-93f4-4124-a602-acf797318279: Position # Position
     4edc15d6-7d35-4fb9-af0e-0dd07d4176ba: 'Pull Quote' # Pull Quote
     5a236b1b-00c7-4038-9264-b4e97830be5f: Image # Image

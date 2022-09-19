@@ -11,7 +11,7 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Site Assets
+  defaultUploadLocationSource: 'volume:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maxRelations: 2
@@ -20,7 +20,7 @@ settings:
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Site Assets
+  restrictedLocationSource: 'volume:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
@@ -39,7 +39,7 @@ settings:
   showUnpermittedVolumes: true
   source: null
   sources:
-    - 'volume:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Site Assets
+    - 'volume:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list
