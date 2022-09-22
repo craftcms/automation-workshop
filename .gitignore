@@ -1,4 +1,5 @@
 /.env
 /.idea
 /vendor
+/vendor-local
 .DS_Store
