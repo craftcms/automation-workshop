@@ -52,5 +52,5 @@ Edit `.husky/pre-commit`, replacing `npm test` with:
 # TODO: copy/paste
 ```
 
-If using Tower, set your Git binary to `usr/local/bin/git`:
+If using Tower, try setting your Git binary to `usr/local/bin/git` or `opt/homebrew/bin/git`:
 ![Tower's Git binary selection](/automation-workshop/assets/tower-hooks.png)
