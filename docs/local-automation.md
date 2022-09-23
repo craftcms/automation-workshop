@@ -2,32 +2,54 @@
 
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Husky](https://github.com/typicode/husky)
+- [GrumPHP](https://github.com/phpro/grumphp)
+
+```shell
+ddev composer require craftcms/ecs:dev-main --dev
+ddev composer config scripts.check-cs 'ecs check --ansi'
+ddev composer config scripts.fix-cs 'ecs check --ansi --fix'
+touch ecs.php
+
+ddev composer require craftcms/phpstan:dev-main --dev
+ddev composer config scripts.phpstan 'phpstan --memory-limit=1G'
+touch phpstan.neon
+```
+
+`ecs.php`:
+
+```php
+# TODO: copy/paste
+```
+
+`phpstan.neon`:
+
+```php
+# TODO: copy/paste
+```
+
+```shell
+# Try it out
+ddev composer run check-cs
+ddev composer run phpstan
+```
 
 ## Husky & Lint Staged
 
-```shell
+````shell
 ddev exec npx husky-init && npm install
 ddev exec npm install --save-dev lint-staged
+touch .lintstagedrc.json
 
-echo '{
-  "**/*.php": [
-    "./vendor/bin/ecs check --ansi --fix",
-    "./vendor/bin/phpstan analyse --memory-limit=1G"
-  ],
-  "*": "prettier --ignore-unknown --write"
-}'> .lintstagedrc.json
-```
+`.lintstagedrc.json`:
+
+```json
+# TODO: copy/paste
+````
 
 Edit `.husky/pre-commit`, replacing `npm test` with:
 
 ```shell
-# Add to path for GUIs (Tower, etc.)
-PATH="/usr/local/bin:$PATH"
-
-# If using using nvm and running from host…
-#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-
-ddev exec npx lint-staged
+# TODO: copy/paste
 ```
 
 If using Tower, set your Git binary to `usr/local/bin/git`:
