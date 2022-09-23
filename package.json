@@ -1,24 +1,9 @@
 {
   "name": "automation-workshop",
-  "version": "1.0.0",
-  "description": "[Docs](https://craftcms.github.io/automation-workshop/)",
-  "directories": {
-    "doc": "docs"
-  },
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/craftcms/automation-workshop.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/craftcms/automation-workshop/issues"
-  },
-  "homepage": "https://github.com/craftcms/automation-workshop#readme",
   "devDependencies": {
     "husky": "^7.0.0",
     "lint-staged": "^13.0.3",
