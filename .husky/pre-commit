@@ -3,6 +3,8 @@
 
 # Add to path for GUIs (Tower, etc.)
 PATH="/usr/local/bin:$PATH"
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+# If using using nvm and running from host…
+#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
 ddev exec npx lint-staged
