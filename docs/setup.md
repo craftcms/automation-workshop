@@ -2,7 +2,7 @@
 
 ```shell
 git clone https://github.com/craftcms/automation-workshop.git
-git clone https://github.com/craftcms/apple-news.git vendor-local/apple-news
+cd automation-workshop
+git checkout 01-start
 ddev composer install
-ddev composer link './vendor-local/*'
 ```
