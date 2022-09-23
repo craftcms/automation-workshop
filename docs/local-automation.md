@@ -2,27 +2,12 @@
 
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Husky](https://github.com/typicode/husky)
-- [Prettier](https://prettier.io/)
-
-## Install Prettier
-
-```shell
-npm install --save-dev --save-exact prettier
-echo '{"singleQuote": true}'> .prettierrc.json
-echo '*.php
-composer.lock
-web/cpresources/*
-storage/*
-templates/*
-vendor/*
-vendor-local/*'> .prettierignore
-```
 
 ## Husky & Lint Staged
 
 ```shell
-npx husky-init && npm install
-npm install --save-dev lint-staged
+ddev exec npx husky-init && npm install
+ddev exec npm install --save-dev lint-staged
 
 echo '{
   "**/*.php": [
@@ -38,9 +23,11 @@ Edit `.husky/pre-commit`, replacing `npm test` with:
 ```shell
 # Add to path for GUIs (Tower, etc.)
 PATH="/usr/local/bin:$PATH"
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
-npx lint-staged
+# If using using nvm and running from host…
+#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+ddev exec npx lint-staged
 ```
 
 If using Tower, set your Git binary to `usr/local/bin/git`:
