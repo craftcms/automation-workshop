@@ -6,15 +6,22 @@
 - [PHPStan](https://phpstan.org/)
 - [Php Inspections (EA Extended)](https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-)
 
+## Transformers & Parsers
+
+- [Rector](https://getrector.org/)
+- [nikic/PHP-Parser](https://github.com/nikic/PHP-Parser/)
+
 ## Formatters & Linters
 
 - [Easy Coding Standard (ECS)](https://github.com/symplify/easy-coding-standard)
 - [Prettier](https://prettier.io/)
 
-## Transformers & Parsers
+### 4 Noble Truths of Code Style
 
-- [Rector](https://getrector.org/)
-- [nikic/PHP-Parser](https://github.com/nikic/PHP-Parser/)
+1. Suffering is an innate characteristic of being a developer
+2. TODO
+3. TODO
+4. 🧘TODO
 
 ## Install Prettier
 
