@@ -729,12 +729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/apple-news.git",
-                "reference": "407afa03cf351334f68cb9e8da61e09ab51ff65e"
+                "reference": "ab4fda37618f2f3e3709a54ce6a0dc565dda506d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/apple-news/zipball/407afa03cf351334f68cb9e8da61e09ab51ff65e",
-                "reference": "407afa03cf351334f68cb9e8da61e09ab51ff65e",
+                "url": "https://api.github.com/repos/craftcms/apple-news/zipball/ab4fda37618f2f3e3709a54ce6a0dc565dda506d",
+                "reference": "ab4fda37618f2f3e3709a54ce6a0dc565dda506d",
                 "shasum": ""
             },
             "require": {
@@ -744,10 +744,17 @@
                 "php": "^8.0.2"
             },
             "require-dev": {
+                "codeception/codeception": "^4.0.0",
+                "codeception/module-asserts": "^1.0.0",
+                "codeception/module-datafactory": "^1.0.0",
+                "codeception/module-phpbrowser": "^1.0.0",
+                "codeception/module-rest": "^1.0.0",
+                "codeception/module-yii2": "^1.0.0",
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main",
                 "craftcms/rector": "dev-main",
-                "craftcms/redactor": "*"
+                "craftcms/redactor": "*",
+                "vlucas/phpdotenv": "^5.4"
             },
             "type": "craft-plugin",
             "extra": {
@@ -785,20 +792,20 @@
                 "rss": "https://github.com/craftcms/apple-news/commits/master.atom",
                 "source": "https://github.com/craftcms/apple-news"
             },
-            "time": "2022-09-19T02:40:52+00:00"
+            "time": "2022-09-20T22:37:31+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "4.2.5",
+            "version": "4.2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "8c9199e4d1c528f9e371a8ba9cb0246b65510840"
+                "reference": "68fbe2e48c83b9cd13292699de24a8849f6492d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/8c9199e4d1c528f9e371a8ba9cb0246b65510840",
-                "reference": "8c9199e4d1c528f9e371a8ba9cb0246b65510840",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/68fbe2e48c83b9cd13292699de24a8849f6492d8",
+                "reference": "68fbe2e48c83b9cd13292699de24a8849f6492d8",
                 "shasum": ""
             },
             "require": {
@@ -843,7 +850,8 @@
                 "yiisoft/yii2-symfonymailer": "^2.0.0"
             },
             "conflict": {
-                "league/oauth2-client": "2.4.0"
+                "league/oauth2-client": "2.4.0",
+                "webonyx/graphql-php": "14.11.7"
             },
             "provide": {
                 "bower-asset/inputmask": "~3.2.2|~3.3.5",
@@ -902,7 +910,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-09-20T16:02:05+00:00"
+            "time": "2022-09-21T13:20:27+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -6665,16 +6673,16 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.11.6",
+            "version": "v14.11.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "6070542725b61fc7d0654a8a9855303e5e157434"
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6070542725b61fc7d0654a8a9855303e5e157434",
-                "reference": "6070542725b61fc7d0654a8a9855303e5e157434",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/04a48693acd785330eefd3b0e4fa67df8dfee7c3",
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3",
                 "shasum": ""
             },
             "require": {
@@ -6719,7 +6727,7 @@
             ],
             "support": {
                 "issues": "https://github.com/webonyx/graphql-php/issues",
-                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.6"
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.8"
             },
             "funding": [
                 {
@@ -6727,7 +6735,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-04-13T16:25:32+00:00"
+            "time": "2022-09-21T15:35:03+00:00"
         },
         {
             "name": "yiisoft/yii2",
