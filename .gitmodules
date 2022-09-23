@@ -1,4 +1,0 @@
-[submodule "vendor-local/apple-news"]
-  path = vendor-local/apple-news
-  url = https://github.com/craftcms/apple-news.git
-  branch = 3.0
