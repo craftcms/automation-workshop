@@ -1,7 +1,6 @@
-name: CI
-
 on:
   workflow_dispatch:
+  pull_request:
   push:
     branches:
       - production
@@ -10,25 +9,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Install Composer dependencies
-        run: composer install --no-interaction --no-ansi --no-progress
-
-      - name: Run ECS checks
-        run: composer run check-cs
-
-      - name: PHPStan
-        run: composer run phpstan
-
-      - name: Notify
-        if: ${{ failure() }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: prettier --check .
+      - name: Notification
+        if: ${{ always() }}
         uses: appleboy/discord-action@0.0.3
         with:
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          color: "#48f442"
-          username: "GitHub Bot"
-          message: Build failed for ${{ github.repository }}
+          message: Build [${{ job.status }}]
             ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

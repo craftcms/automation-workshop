@@ -1,4 +1,3 @@
 {
-  "**/*.php": ["composer run fix-cs", "composer run phpstan"],
   "*": "prettier --ignore-unknown --write"
 }

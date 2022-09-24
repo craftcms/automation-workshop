@@ -6,9 +6,7 @@
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
-    "craftcms/ecs": "dev-main",
     "sandersander/composer-link": "^0.3.1",
-    "craftcms/phpstan": "dev-main",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
@@ -16,11 +14,6 @@
       "modules\\": "modules/",
       "applenewschannels\\": "config/apple-news-channels/"
     }
-  },
-  "scripts": {
-    "phpstan": "phpstan analyse --memory-limit=1G",
-    "check-cs": "ecs check --ansi",
-    "fix-cs": "ecs check --ansi --fix"
   },
   "config": {
     "allow-plugins": {
