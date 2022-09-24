@@ -13,6 +13,8 @@ test("test", async ({ page }) => {
   await expect(
     page.locator('text=/.*"Shiny Brad saved my life!".*/')
   ).toBeVisible();
+
+  await page.screenshot({ path: "playwright-report/post.png", fullPage: true });
 });
 
 test("healthcheck", async ({ page }) => {
