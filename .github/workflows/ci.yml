@@ -67,6 +67,7 @@ jobs:
       - uses: lhansford/bugsnag-report-build-action@v1.1.0
         name: Report Build to Bugsnag
         with:
+          appVersion: ${{ github.event.repository.updated_at }}
           apiKey: ${{ secrets.BUGSNAG_API_KEY }}
   e2e:
     needs: deploy
