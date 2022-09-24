@@ -6,6 +6,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@playwright/test": "^1.26.0",
     "husky": "^7.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
