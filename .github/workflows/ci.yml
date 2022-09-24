@@ -59,5 +59,8 @@ jobs:
         run: |
           forge server:switch hidden-firefly
           forge deploy applefakenews.com
+          forge command applefakenews.com --command="php craft migrate/all --no-content --interactive=0"
+          forge command applefakenews.com --command="php craft project-config/apply"
+          forge command applefakenews.com --command="php craft migrate --track=content --interactive=0"
         env:
           FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
