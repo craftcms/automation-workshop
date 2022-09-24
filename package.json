@@ -2,7 +2,8 @@
   "name": "automation-workshop",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "husky": "^7.0.0",

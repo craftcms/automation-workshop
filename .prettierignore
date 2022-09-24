@@ -6,3 +6,4 @@ templates/*
 vendor/*
 vendor-local/
 *.html
+config/project/*
