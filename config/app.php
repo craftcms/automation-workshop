@@ -17,7 +17,13 @@
  * your config/ folder, alongside this one.
  */
 
+use Bugsnag\Shutdown\PhpShutdownStrategy;
 use craft\helpers\App;
+use craft\log\Dispatcher;
+use craft\log\MonologTarget;
+use Illuminate\Support\Collection;
+use Logtail\Monolog\LogtailHandler;
+use MeadSteve\MonoSnag\BugsnagHandler;
 
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
@@ -25,4 +31,29 @@ return [
         'my-module' => \modules\Module::class,
     ],
     //'bootstrap' => ['my-module'],
+    'components' => [
+        'log' => static function() {
+            $dispatcher = new Dispatcher();
+
+            Collection::make($dispatcher->targets)
+                ->each(function(MonologTarget $target) {
+                    $logtailToken = App::env('LOGTAIL_TOKEN');
+                    $bugsnagApiKey = App::env('BUGSNAG_API_KEY');
+
+                    if ($logtailToken) {
+                        $target->getLogger()->pushHandler((new LogtailHandler($logtailToken)));
+                    }
+
+                    if ($bugsnagApiKey) {
+                        $bugsnagClient = Bugsnag\Client::make($bugsnagApiKey);
+                        $bugsnagClient->setReleaseStage(App::env('CRAFT_ENVIRONMENT'));
+                        $shutdownStrategy = new PhpShutdownStrategy();
+                        $shutdownStrategy->registerShutdownStrategy($bugsnagClient);
+                        $target->getLogger()->pushHandler((new BugsnagHandler($bugsnagClient)));
+                    }
+                });
+
+            return $dispatcher;
+        },
+    ],
 ];

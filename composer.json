@@ -3,6 +3,8 @@
     "craftcms/cms": "^4.2.0.2",
     "craftcms/redactor": "3.0.2",
     "craftcms/apple-news": "3.0.x-dev",
+    "logtail/monolog-logtail": "^0.1.3",
+    "mead-steve/mono-snag": "^4.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
