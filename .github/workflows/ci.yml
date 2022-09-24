@@ -64,7 +64,11 @@ jobs:
           forge command applefakenews.com --command="php craft migrate --track=content --interactive=0"
         env:
           FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
-  test:
+      - uses: lhansford/bugsnag-report-build-action@v1.1.0
+        name: Report Build to Bugsnag
+        with:
+          apiKey: ${{ secrets.BUGSNAG_API_KEY }}
+  e2e:
     needs: deploy
     timeout-minutes: 60
     runs-on: ubuntu-latest
@@ -78,7 +82,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test --browser chromium
       - uses: actions/upload-artifact@v2
         if: always()
         with:
