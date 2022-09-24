@@ -7,3 +7,5 @@ vendor/*
 vendor-local/
 *.html
 config/project/*
+.ddev/*
+!.ddev/config.yaml
