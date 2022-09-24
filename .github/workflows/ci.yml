@@ -13,9 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: prettier --check .
-
+      - run: npx prettier --check .
       - name: Discord Success
         if: ${{ success() }}
         uses: appleboy/discord-action@0.0.3
