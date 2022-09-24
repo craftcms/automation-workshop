@@ -38,7 +38,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ success() }}
+    needs: code-quality
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
