@@ -1,8 +1,13 @@
 import { test, expect } from "@playwright/test";
 
-test("test", async ({ page }) => {
+test("article", async ({ page }, testInfo) => {
   // Go to https://applefakenews.com/
   await page.goto("https://applefakenews.com/");
+
+  await testInfo.attach("home", {
+    body: await page.screenshot({ fullPage: true }),
+    contentType: "image/png",
+  });
 
   // Click text=This is an important Fake News post!
   await page.locator("text=This is an important Fake News post!").click();
@@ -14,7 +19,10 @@ test("test", async ({ page }) => {
     page.locator('text=/.*"Shiny Brad saved my life!".*/')
   ).toBeVisible();
 
-  await page.screenshot({ path: "playwright-report/post.png", fullPage: true });
+  await testInfo.attach("article", {
+    body: await page.screenshot({ fullPage: true }),
+    contentType: "image/png",
+  });
 });
 
 test("healthcheck", async ({ page }) => {
