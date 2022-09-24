@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Apple Fake News!</title>
+</head>
+<body>
+
+    <h1><a href="{{ entry.url() }}">{{ entry.title }}</a> by {{ entry.author }} - {{ entry.postDate|date }}</h1>
+    {% if entry.heading|length %}
+        <h2>{{ entry.heading }}</h2>
+    {% endif %}
+    {% if entry.subheading|length %}
+        <h3>{{ entry.subheading }}</h3>
+    {% endif %}
+    {% if entry.featuredEntry and entry.featuredImage|length %}
+        {% set featuredImage = entry.featuredImage.one() %}
+        <img src="{{ featuredImage.url('featured') }}" height="{{ featuredImage.height('featured') }}" width="{{ featuredImage.width('featured') }}">
+    {% endif %}
+
+<hr>
+
+{% for block in entry.articleBody.all() %}
+    {% if block.type == "newSection" %}
+        <h3>{{ block.sectionHeading }}</h3>
+    {% elseif block.type == "heading" %}
+        <h2>{{ block.heading }}</h2>
+    {% elseif block.type == "text" %}
+        <p>{{ block.text }}</p>
+    {% elseif block.type == "pullQuote" %}
+        <blockquote>
+            <p>{{ block.pullQuote }}</p>
+        </blockquote>
+    {% elseif block.type == "image" %}
+        {% set image = block.image.one() %}
+        <figure>
+            <img src="{{ image.url('featured') }}" height="{{ image.height('featured') }}" width="{{ image.width('featured') }}">
+            {% if block.caption|length %}
+                <figcaption>{{ block.caption }}</figcaption>
+            {% endif %}
+        </figure>
+    {% elseif block.type == "gallery" %}
+        {% if block.images|length %}
+            <ul>
+            {% for image in block.images %}
+                <li><img src="{{ image.url('featured') }}" height="{{ image.height('featured') }}" width="{{ image.width('featured') }}"></li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% elseif block.type == "quote" %}
+        <blockquote>
+            <p>{{ block.quote }} - {{ block.attribution }}</p>
+        </blockquote>
+    {% endif %}
+{% endfor %}
+
+</body>
+</html>
