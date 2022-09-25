@@ -34,24 +34,28 @@ return [
     'components' => [
         'log' => static function() {
             $dispatcher = new Dispatcher();
+            $bugsnagApiKey = App::env('BUGSNAG_API_KEY');
+            $logtailToken = App::env('LOGTAIL_TOKEN');
+            $handlers = [];
 
-            Collection::make($dispatcher->targets)
-                ->each(function(MonologTarget $target) {
-                    $logtailToken = App::env('LOGTAIL_TOKEN');
-                    $bugsnagApiKey = App::env('BUGSNAG_API_KEY');
+            if ($bugsnagApiKey) {
+                $bugsnagClient = Bugsnag\Client::make($bugsnagApiKey);
+                $bugsnagClient->setReleaseStage(App::env('CRAFT_ENVIRONMENT'));
+                $shutdownStrategy = new PhpShutdownStrategy();
+                $shutdownStrategy->registerShutdownStrategy($bugsnagClient);
+                $handlers[] = new BugsnagHandler($bugsnagClient);
+            }
 
-                    if ($logtailToken) {
-                        $target->getLogger()->pushHandler((new LogtailHandler($logtailToken)));
-                    }
+            if ($logtailToken) {
+                $handlers[] = new LogtailHandler($logtailToken);
+            }
 
-                    if ($bugsnagApiKey) {
-                        $bugsnagClient = Bugsnag\Client::make($bugsnagApiKey);
-                        $bugsnagClient->setReleaseStage(App::env('CRAFT_ENVIRONMENT'));
-                        $shutdownStrategy = new PhpShutdownStrategy();
-                        $shutdownStrategy->registerShutdownStrategy($bugsnagClient);
-                        $target->getLogger()->pushHandler((new BugsnagHandler($bugsnagClient)));
-                    }
-                });
+            $monologTarget = new MonologTarget([
+                'name' => 'monolog',
+                'allowLineBreaks' => false,
+            ]);
+            $monologTarget->getLogger()->setHandlers($handlers);
+            $dispatcher->targets = [$monologTarget];
 
             return $dispatcher;
         },
