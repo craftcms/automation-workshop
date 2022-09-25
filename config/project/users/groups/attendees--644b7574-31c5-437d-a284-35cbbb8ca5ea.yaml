@@ -1,0 +1,13 @@
+description: ''
+handle: attendees
+name: Attendees
+permissions:
+  - accesscp
+  - 'createentries:00d304c0-b07e-4f56-bc31-76975a06ecb3' # News
+  - 'editimages:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
+  - 'saveassets:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
+  - 'saveentries:00d304c0-b07e-4f56-bc31-76975a06ecb3' # News
+  - 'viewassets:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
+  - 'viewentries:00d304c0-b07e-4f56-bc31-76975a06ecb3' # News
+  - 'viewpeerassets:2c6e9955-32e0-4310-bb8b-8bddb9d83e2f' # Assets
+  - 'viewpeerentries:00d304c0-b07e-4f56-bc31-76975a06ecb3' # News

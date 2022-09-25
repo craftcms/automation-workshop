@@ -1,4 +1,4 @@
-dateModified: 1663547074
+dateModified: 1664045832
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Automation Workshop'
@@ -30,6 +30,7 @@ meta:
     60d2ec68-884d-4556-93c7-059ae103830c: Quote # Quote
     76d19faa-e79e-4b31-96fb-8b8cfdd6813a: 'Featured?' # Featured?
     627b9203-93fb-4981-b7fb-f7079c41a453: Image # Image
+    644b7574-31c5-437d-a284-35cbbb8ca5ea: Attendees
     942f10b8-e7c1-4108-9fc2-c0b240787526: Position # Position
     1943ce5d-58b3-45ca-b9c3-aae2a6d73130: Heading # Heading
     4340da97-d0fe-4316-81e1-e36d87af24d6: Text # Text
@@ -37,6 +38,7 @@ meta:
     789299f8-0aeb-4555-8ceb-6b8f9a027268: Attribution # Attribution
     aaa1af88-a5c1-45ef-a972-c05e41148eb2: 'Automation Workshop' # Automation Workshop
     abc2b959-7a28-4878-b81d-08ac81f3362d: Link # Link
+    b2388cf6-eaa8-4504-8c26-5b6e9fb5333f: Featured # Featured
     c7558099-aeb6-4dae-acad-adea485ea6df: Position # Position
     cbf2ad31-610c-490c-b71e-c9bcf86a0919: Quote # Quote
     cfda19f6-1110-4779-a1f3-eb3139f6d55b: Position # Position
@@ -62,9 +64,3 @@ system:
   name: 'Automation Workshop'
   schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true
