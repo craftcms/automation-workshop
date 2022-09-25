@@ -3,6 +3,18 @@
 ```shell
 git clone https://github.com/craftcms/automation-workshop.git
 cd automation-workshop
-git checkout 01-start
-ddev composer install
+ddev config
 ```
+
+Ensure PHP versions agree in `.ddev/config.yaml` and `composer.json`
+
+## Optional…
+
+```shell
+gh repo fork
+```
+
+## Links
+
+- https://craftcms.com/knowledge-base/migrating-from-craft-nitro-to-ddev
+- https://cli.github.com/
