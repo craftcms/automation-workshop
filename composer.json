@@ -1,10 +1,12 @@
 {
   "require": {
+    "craftcms/apple-news": "3.0.x-dev",
     "craftcms/cms": "^4.2.0.2",
     "craftcms/redactor": "3.0.2",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
+    "sandersander/composer-link": "^0.3.1",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
@@ -16,7 +18,8 @@
   "config": {
     "allow-plugins": {
       "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
+      "yiisoft/yii2-composer": true,
+      "sandersander/composer-link": true
     },
     "sort-packages": true,
     "optimize-autoloader": true,

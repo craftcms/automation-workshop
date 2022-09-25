@@ -1,4 +1,4 @@
-dateModified: 1664045832
+dateModified: 1664138612
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Automation Workshop'
@@ -30,7 +30,7 @@ meta:
     60d2ec68-884d-4556-93c7-059ae103830c: Quote # Quote
     76d19faa-e79e-4b31-96fb-8b8cfdd6813a: 'Featured?' # Featured?
     627b9203-93fb-4981-b7fb-f7079c41a453: Image # Image
-    644b7574-31c5-437d-a284-35cbbb8ca5ea: Attendees
+    644b7574-31c5-437d-a284-35cbbb8ca5ea: Attendees # Attendees
     942f10b8-e7c1-4108-9fc2-c0b240787526: Position # Position
     1943ce5d-58b3-45ca-b9c3-aae2a6d73130: Heading # Heading
     4340da97-d0fe-4316-81e1-e36d87af24d6: Text # Text
@@ -50,6 +50,10 @@ meta:
     ef56cbc5-4025-4527-b5e0-738658d937a0: 'Short Description' # Short Description
     f9a53aa4-5b6c-4939-964e-49e7bb6d9dd8: 'Section Heading' # Section Heading
 plugins:
+  apple-news:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true

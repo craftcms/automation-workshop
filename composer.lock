@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf8860573e177611b4b94276fde3b6ba",
+    "content-hash": "1ca20fc3554c3b12e590a409e137d9e7",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -69,6 +69,53 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "chapter-three/apple-news-api",
+            "version": "0.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chapter-three/AppleNewsAPI.git",
+                "reference": "73fd89ff1e3ad59f362a9e7f3276b40641bf8ec2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chapter-three/AppleNewsAPI/zipball/73fd89ff1e3ad59f362a9e7f3276b40641bf8ec2",
+                "reference": "73fd89ff1e3ad59f362a9e7f3276b40641bf8ec2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "php-curl-class/php-curl-class": "^4.6"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.5.*",
+                "phpdocumentor/phpdocumentor": "~2.8",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ChapterThree\\AppleNewsAPI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Push content to Apple News.",
+            "homepage": "https://github.com/chapter-three/AppleNewsAPI",
+            "keywords": [
+                "api",
+                "apple",
+                "news",
+                "push"
+            ],
+            "support": {
+                "issues": "https://github.com/chapter-three/AppleNewsAPI/issues",
+                "source": "https://github.com/chapter-three/AppleNewsAPI/tree/0.3.11"
+            },
+            "time": "2020-12-21T17:19:11+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -675,6 +722,77 @@
                 }
             ],
             "time": "2022-02-25T21:32:43+00:00"
+        },
+        {
+            "name": "craftcms/apple-news",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/apple-news.git",
+                "reference": "6f9e60415713bbc46dda9ddbb8f85f81f296517c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/apple-news/zipball/6f9e60415713bbc46dda9ddbb8f85f81f296517c",
+                "reference": "6f9e60415713bbc46dda9ddbb8f85f81f296517c",
+                "shasum": ""
+            },
+            "require": {
+                "chapter-three/apple-news-api": "^0.3.9",
+                "craftcms/cms": "^4.2.0",
+                "league/html-to-markdown": "^4.2",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.0.0",
+                "codeception/module-asserts": "^1.0.0",
+                "codeception/module-datafactory": "^1.0.0",
+                "codeception/module-phpbrowser": "^1.0.0",
+                "codeception/module-rest": "^1.0.0",
+                "codeception/module-yii2": "^1.0.0",
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "craftcms/rector": "dev-main",
+                "craftcms/redactor": "*",
+                "vlucas/phpdotenv": "^5.4"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Apple News",
+                "handle": "apple-news",
+                "description": "Publish entries to Apple News",
+                "documentationUrl": "https://github.com/craftcms/apple-news/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\applenews\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Publish Craft CMS entries to Apple News",
+            "keywords": [
+                "apple news",
+                "cms",
+                "craftcms",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/craftcms/apple-news/blob/master/README.md",
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/apple-news/issues?state=open",
+                "rss": "https://github.com/craftcms/apple-news/commits/master.atom",
+                "source": "https://github.com/craftcms/apple-news"
+            },
+            "time": "2022-09-24T04:21:28+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -2229,6 +2347,92 @@
             "time": "2022-04-13T08:02:27+00:00"
         },
         {
+            "name": "league/html-to-markdown",
+            "version": "4.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/html-to-markdown.git",
+                "reference": "0868ae7a552e809e5cd8f93ba022071640408e88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0868ae7a552e809e5cd8f93ba022071640408e88",
+                "reference": "0868ae7a552e809e5cd8f93ba022071640408e88",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-xml": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "mikehaertl/php-shellcommand": "~1.1.0",
+                "phpunit/phpunit": "^4.8|^5.7",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "bin": [
+                "bin/html-to-markdown"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\HTMLToMarkdown\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Nick Cernis",
+                    "email": "nick@cern.is",
+                    "homepage": "http://modernnerd.net",
+                    "role": "Original Author"
+                }
+            ],
+            "description": "An HTML-to-markdown conversion helper for PHP",
+            "homepage": "https://github.com/thephpleague/html-to-markdown",
+            "keywords": [
+                "html",
+                "markdown"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
+                "source": "https://github.com/thephpleague/html-to-markdown/tree/4.10.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/colinodell",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-07-01T00:34:03+00:00"
+        },
+        {
             "name": "league/oauth2-client",
             "version": "2.6.1",
             "source": {
@@ -2583,6 +2787,66 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "4.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "debe0a89ee1eb9a2f15c0bb63ce8b347130af50d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/debe0a89ee1eb9a2f15c0bb63ce8b347130af50d",
+                "reference": "debe0a89ee1eb9a2f15c0bb63ce8b347130af50d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class is an object-oriented wrapper of the PHP cURL extension.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "json",
+                "php",
+                "requests",
+                "rest",
+                "restful",
+                "web service",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/php-curl-class/php-curl-class/issues",
+                "source": "https://github.com/php-curl-class/php-curl-class/tree/master"
+            },
+            "time": "2016-07-25T19:31:39+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -7068,6 +7332,61 @@
             "time": "2022-07-28T14:25:11+00:00"
         },
         {
+            "name": "sandersander/composer-link",
+            "version": "v0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SanderSander/composer-link.git",
+                "reference": "d3fa772cedca35fb1ee77f0a5593f4b8efcdd035"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SanderSander/composer-link/zipball/d3fa772cedca35fb1ee77f0a5593f4b8efcdd035",
+                "reference": "d3fa772cedca35fb1ee77f0a5593f4b8efcdd035",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.2",
+                "ext-json": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "composer/composer": "^2.2",
+                "friendsofphp/php-cs-fixer": "^v3.4.0",
+                "phpmd/phpmd": "^2.12",
+                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpstan/phpstan-strict-rules": "^1.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "ComposerLink\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ComposerLink\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SanderSander",
+                    "email": "themastersleader@hotmail.com"
+                }
+            ],
+            "description": "Adds ability to link local packages for development with composer",
+            "support": {
+                "issues": "https://github.com/SanderSander/composer-link/issues",
+                "source": "https://github.com/SanderSander/composer-link/tree/v0.3.1"
+            },
+            "time": "2022-08-25T17:17:13+00:00"
+        },
+        {
             "name": "yiisoft/yii2-shell",
             "version": "2.0.5",
             "source": {
@@ -7135,7 +7454,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "craftcms/apple-news": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
