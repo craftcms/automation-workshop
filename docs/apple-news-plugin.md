@@ -9,23 +9,47 @@ ddev ssh
 
   # Within DDEV container
   cd vendor-local/apple-news
-  composer require --dev "craftcms/ecs:dev-main" "craftcms/phpstan:dev-main" "craftcms/rector:dev-main"
+  composer require "craftcms/ecs:dev-main" "craftcms/phpstan:dev-main" "craftcms/rector:dev-main" --dev
   composer config scripts.fix-cs "ecs check --ansi --fix"
   composer config scripts.check-cs "ecs check --ansi"
   composer config scripts.phpstan "phpstan --memory-limit=1G"
+  touch ecs.php
+  touch phpstan.neon
   exit
 ```
 
-`vendor-local/apple-news/phpstan.neon`
+`vendor-local/apple-news/phpstan.neon`:
 
-```json
+```yaml
 includes:
-    - vendor/craftcms/phpstan/phpstan.neon
+  - vendor/craftcms/phpstan/phpstan.neon
 
 parameters:
-    level: 0
-    paths:
-        - src
+  level: 0
+  paths:
+    - src
+```
+
+`vendor-local/apple-news/ecs.php`:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use craft\ecs\SetList;
+use Symplify\EasyCodingStandard\Config\ECSConfig;
+
+return static function(ECSConfig $ecsConfig): void {
+    $ecsConfig->paths([
+        __DIR__ . '/src',
+        __FILE__,
+    ]);
+
+    $ecsConfig->sets([
+        SetList::CRAFT_CMS_4,
+    ]);
+};
 ```
 
 ## Upgrade

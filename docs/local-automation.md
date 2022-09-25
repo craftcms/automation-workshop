@@ -7,32 +7,11 @@
 - [GrumPHP](https://github.com/phpro/grumphp)
 
 ```shell
-ddev composer require craftcms/ecs:dev-main --dev
-ddev composer config scripts.check-cs 'ecs check --ansi'
-ddev composer config scripts.fix-cs 'ecs check --ansi --fix'
-touch ecs.php
-
-ddev composer require craftcms/phpstan:dev-main --dev
-ddev composer config scripts.phpstan 'phpstan --memory-limit=1G'
-touch phpstan.neon
-```
-
-`ecs.php`:
-
-```php
-# TODO: copy/paste
-```
-
-`phpstan.neon`:
-
-```php
-# TODO: copy/paste
-```
-
-```shell
 # Try it out
-ddev composer run check-cs
-ddev composer run phpstan
+ddev ssh
+  cd vendor-local/apple-news
+  composer run check-cs
+  composer run phpstan
 ```
 
 ## Husky & Lint Staged
@@ -45,13 +24,24 @@ touch .lintstagedrc.json
 `.lintstagedrc.json`:
 
 ```json
-# TODO: copy/paste
+{
+  "*": "prettier --ignore-unknown --write"
+}
 ````
 
-Edit `.husky/pre-commit`, replacing `npm test` with:
+`.husky/pre-commit`:
 
 ```shell
-# TODO: copy/paste
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Add to path for GUIs (Tower, etc.)
+PATH="/usr/local/bin:$PATH"
+
+# If using using nvm and running from host…
+#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+ddev exec npx lint-staged
 ```
 
 If using Tower, try setting your Git binary to `usr/local/bin/git` or `opt/homebrew/bin/git`:
