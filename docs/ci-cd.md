@@ -1,5 +1,7 @@
 # CI/CD
 
+![It's all pipes!](/automation-workshop/assets/all-pipes.gif)
+
 ## Github Actions
 
 - [Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)
