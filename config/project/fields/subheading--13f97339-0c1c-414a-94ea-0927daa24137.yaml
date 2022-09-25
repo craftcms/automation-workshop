@@ -1,0 +1,19 @@
+columnSuffix: fihbeuel
+contentColumnType: string(1020)
+fieldGroup: d527ecd7-601c-4525-9238-9d4b0c7d299c # Common
+handle: subheading
+instructions: null
+name: Subheading
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

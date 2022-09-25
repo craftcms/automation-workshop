@@ -1,0 +1,19 @@
+columnSuffix: urvisobw
+contentColumnType: string(1020)
+fieldGroup: d527ecd7-601c-4525-9238-9d4b0c7d299c # Common
+handle: linkUrl
+instructions: null
+name: 'Link URL'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'e.g. http://example.com'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

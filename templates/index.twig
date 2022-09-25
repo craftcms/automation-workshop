@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+{#    <meta http-equiv="refresh" content="5; URL={{ siteUrl }}">#}
+    <title>Apple Fake News!</title>
+</head>
+<body>
+{% set articles = craft.entries.section('news').type('article').all() %}
+
+{% for article in articles %}
+    <h1><a href="{{ article.url() }}">{{ article.title }}</a> by {{ article.author }} - {{ article.postDate|date }}</h1>
+    {% if article.heading|length %}
+        <h2>{{ article.heading }}</h2>
+    {% endif %}
+    {% if article.subheading|length %}
+        <h3>{{ article.subheading }}</h3>
+    {% endif %}
+    {% if article.featuredEntry and article.featuredImage|length %}
+        {% set featuredImage = article.featuredImage.one() %}
+        <img src="{{ featuredImage.url('featured') }}" height="{{ featuredImage.height('featured') }}" width="{{ featuredImage.width('featured') }}">
+    {% endif %}
+    <hr>
+{% endfor %}
+</body>
+</html>
