@@ -8,6 +8,8 @@ Pushing code doesn’t have to be scary. We'll explore ways to embrace automatio
 
 - Bill Gates
 
+![shinybrad by Matt Stein](/automation-workshop/assets/shinybrad.png)
+
 ## Requirements
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
