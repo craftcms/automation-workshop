@@ -1,5 +1,7 @@
 # Local Automation
 
+![Inside Macpaint by Ken Jenkins](/automation-workshop/assets/inside-macpaint.jpeg)
+
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Husky](https://github.com/typicode/husky)
 - [GrumPHP](https://github.com/phpro/grumphp)
