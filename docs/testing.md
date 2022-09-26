@@ -1,10 +1,8 @@
 # Tests
 
-- https://martinfowler.com/bliki/TestPyramid.html
-- https://kentcdodds.com/blog/write-tests
-- https://twitter.com/kentcdodds/status/960723172591992832
-
-- Don't be like https://news.ycombinator.com/item?id=32883596
+- [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
+- [Write tests. Not too many. Mostly integration.](https://kentcdodds.com/blog/write-tests)
+- [The Testing Trophy](https://twitter.com/kentcdodds/status/960723172591992832)
 
 ## Codeception
 

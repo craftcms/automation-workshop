@@ -92,3 +92,5 @@ ddev composer require --dev sandersander/composer-link
 ddev composer link './vendor-local/*'
 ddev craft plugin/install apple-news
 ```
+
+[Feature Request?!](https://github.com/craftcms/apple-news/issues/13)
