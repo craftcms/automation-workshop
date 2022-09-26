@@ -19,6 +19,7 @@ ddev ssh --dir /var/www/html/vendor-local/apple-news
 ddev exec npx husky-init && npm install
 ddev exec npm install --save-dev lint-staged
 touch .lintstagedrc.json
+```
 
 `.lintstagedrc.json`:
 
