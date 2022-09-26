@@ -7,15 +7,16 @@
 
 ## Codeception
 
+`vendor-local/apple-news/composer.json`:
+
 ```shell
-ddev ssh --dir /var/www/html/vendor-local/apple-news
-    ddev composer require codeception/codeception:^4.0.0
-    ddev composer require codeception/module-asserts:^1.0.0
-    ddev composer require codeception/module-datafactory:^1.0.0
-    ddev composer require codeception/module-phpbrowser:^1.0.0
-    ddev composer require codeception/module-rest:^1.0.0
-    ddev composer require codeception/module-yii2:^1.0.0
-    ddev composer require vlucas/phpdotenv:^5.4
+"codeception/codeception": "^4.0.0",
+"codeception/module-asserts": "^1.0.0",
+"codeception/module-datafactory": "^1.0.0",
+"codeception/module-phpbrowser": "^1.0.0",
+"codeception/module-rest": "^1.0.0",
+"codeception/module-yii2": "^1.0.0",
+"vlucas/phpdotenv": "^5.4"
 ```
 
 Add to `scripts` in `vendor-local/apple-news/composer.json`:
@@ -25,4 +26,9 @@ Add to `scripts` in `vendor-local/apple-news/composer.json`:
   "Composer\\Config::disableProcessTimeout",
   "codecept run unit"
 ]
+```
+
+```shell
+ddev ssh --dir /var/www/html/vendor-local/apple-news
+  composer update
 ```
