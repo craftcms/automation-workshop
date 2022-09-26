@@ -82,8 +82,7 @@ ddev ssh
 - `craft\elements\Asset::getTransformSource()` ➡ `craft\elements\Asset:getImageTransformSourcePath()`️
 
 - [PHPStan](https://phpstan.org)
-  - [Ignoring Errors](https://phpstan.org/user-guide/ignoring-errors)
--
+- [Ignoring Errors](https://phpstan.org/user-guide/ignoring-errors)
 
 ## Install Plugin
 
