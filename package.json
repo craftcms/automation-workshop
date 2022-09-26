@@ -1,4 +1,7 @@
 {
   "name": "automation-workshop",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
 }

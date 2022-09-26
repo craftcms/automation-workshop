@@ -1,0 +1,7 @@
+*.php
+composer.lock
+web/cpresources/*
+storage/*
+templates/*
+vendor/*
+vendor-local/*
