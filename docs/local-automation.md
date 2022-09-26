@@ -8,8 +8,7 @@
 
 ```shell
 # Try it out
-ddev ssh
-  cd vendor-local/apple-news
+ddev ssh --dir /var/www/html/vendor-local/apple-news
   composer run check-cs
   composer run phpstan
 ```

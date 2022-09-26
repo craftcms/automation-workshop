@@ -5,10 +5,9 @@ git clone https://github.com/craftcms/apple-news.git vendor-local/apple-news
 ```
 
 ```shell
-ddev ssh
+ddev ssh --dir /var/www/html/vendor-local/apple-news
 
   # Within DDEV container
-  cd vendor-local/apple-news
   composer require "craftcms/ecs:dev-main" "craftcms/phpstan:dev-main" "craftcms/rector:dev-main" --dev
   composer config scripts.fix-cs "ecs check --ansi --fix"
   composer config scripts.check-cs "ecs check --ansi"
@@ -60,8 +59,7 @@ return static function(ECSConfig $ecsConfig): void {
 - [Rector Rules for Craft CMS](https://github.com/craftcms/rector)
 
 ```shell
-ddev ssh
-    cd vendor-local/apple-news
+ddev ssh --dir /var/www/html/vendor-local/apple-news
     composer update
     composer run phpstan
     composer require craftcms/redactor:* --dev
