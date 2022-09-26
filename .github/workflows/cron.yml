@@ -1,0 +1,30 @@
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+          tools: composer:v2
+          ini-values: post_max_size=256M, max_execution_time=180, memory_limit=512M
+          extensions: ctype,curl,dom,iconv,imagick,intl,json,mbstring,openssl,pcre,pdo,reflection,spl,zip
+      - name: Require Forge CLI
+        run: composer global require laravel/forge-cli
+      - name: Log 'em out!
+        run: |
+          forge server:switch hidden-firefly
+          forge command applefakenews.com --command="php craft users/logout-all"
+        env:
+          FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
