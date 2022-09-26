@@ -78,7 +78,7 @@ ddev ssh --dir /var/www/html/vendor-local/apple-news
 
 - 👉 _Rerun PhpStorm inspections after running Rector_
 - `craft\elements\Asset::getTransformSource()` ➡ `craft\elements\Asset:getImageTransformSourcePath()`️
-
+- `Craft::$app->getView()->hook('cp.entries.edit.details', [$this, 'addEditEntryPagePane']);` ➡ `Event::on(Entry::class, Entry::EVENT_DEFINE_SIDEBAR_HTML, [$this, 'addEditEntryPagePane']);`
 - [PHPStan](https://phpstan.org)
 - [Ignoring Errors](https://phpstan.org/user-guide/ignoring-errors)
 
