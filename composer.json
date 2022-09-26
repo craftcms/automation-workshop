@@ -6,6 +6,9 @@
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main",
+    "craftcms/rector": "dev-main",
     "sandersander/composer-link": "^0.3.1",
     "yiisoft/yii2-shell": "^2.0.3"
   },
@@ -28,5 +31,10 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "scripts": {
+    "fix-cs": "ecs check --ansi --fix",
+    "check-cs": "ecs check --ansi",
+    "phpstan": "phpstan --memory-limit=1G"
+  }
 }
