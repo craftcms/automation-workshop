@@ -42,7 +42,7 @@ vendor/*
 vendor-local/*'> .prettierignore
 
 # Try it out
-prettier --check .
+ddev exec npx prettier --check .
 ```
 
 No useful output for CI, [yet](https://github.com/prettier/prettier/issues/6885).
