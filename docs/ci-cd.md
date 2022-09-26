@@ -120,6 +120,11 @@ deploy:
         forge command applefakenews.com --command="php craft migrate --track=content --interactive=0"
       env:
         FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
+    - uses: lhansford/bugsnag-report-build-action@v1.1.0
+      name: Report Build to Bugsnag
+      with:
+        appVersion: ${{ github.event.repository.updated_at }}
+        apiKey: ${{ secrets.BUGSNAG_API_KEY }}
 ```
 
 ### Cron
