@@ -56,10 +56,36 @@ return static function(ECSConfig $ecsConfig): void {
 
 - [https://craftcms.com/knowledge-base/preparing-for-craft-4](https://craftcms.com/knowledge-base/preparing-for-craft-4)
 - [https://craftcms.com/docs/4.x/upgrade.html](https://craftcms.com/docs/4.x/upgrade.html)
+- [https://craftcms.com/docs/4.x/extend/updating-plugins.html](https://craftcms.com/docs/4.x/extend/updating-plugins.html)
+- [Rector Rules for Craft CMS](https://github.com/craftcms/rector)
 
-TODO: ACTUAL UPGRADE
+```shell
+ddev ssh
+    cd vendor-local/apple-news
+    composer update
+    composer run phpstan
+    composer require craftcms/redactor:* --dev
+    composer config version 3.0.0
+    composer config prefer-stable true
+    composer config minimum-stability dev
+    composer update
+    vendor/bin/rector process src --config vendor/craftcms/rector/sets/craft-cms-40.php
+```
 
-## Link & install
+`vendor-local/apple-news/composer.json`:
+
+```
+"craftcms/cms": "^4.0.0-alpha"
+```
+
+- 👉 _Rerun PhpStorm inspections after running Rector_
+- `craft\elements\Asset::getTransformSource()` ➡ `craft\elements\Asset:getImageTransformSourcePath()`️
+
+- [PHPStan](https://phpstan.org)
+  - [Ignoring Errors](https://phpstan.org/user-guide/ignoring-errors)
+-
+
+## Install Plugin
 
 - [Composer Link](https://github.com/SanderSander/composer-link)
 
