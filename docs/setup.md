@@ -15,12 +15,13 @@ Ensure PHP versions agree in `.ddev/config.yaml` and `composer.json`
 ddev start
 ddev describe
 cp .env.example.dev .env
+ddev composer install
 ddev craft setup
 ddev launch
 ```
 
 ## Links
 
-- https://github.com/drud/ddev/pull/4176/files
-- https://craftcms.com/knowledge-base/migrating-from-craft-nitro-to-ddev
-- https://cli.github.com/
+- [DDEV Craft PR](https://github.com/drud/ddev/pull/4176/files)
+- [Migrating from Craft Nitro to DDEV](https://craftcms.com/knowledge-base/migrating-from-craft-nitro-to-ddev)
+- [GitHub CLI](https://cli.github.com/)
