@@ -4,7 +4,7 @@ on:
     - cron: 0 0 * * *
 
 jobs:
-  cron:
+  log-out:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
