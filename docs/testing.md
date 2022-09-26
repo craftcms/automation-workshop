@@ -7,28 +7,22 @@
 
 ## Codeception
 
-`vendor-local/apple-news/composer.json`:
-
 ```shell
-"codeception/codeception": "^4.0.0",
-"codeception/module-asserts": "^1.0.0",
-"codeception/module-datafactory": "^1.0.0",
-"codeception/module-phpbrowser": "^1.0.0",
-"codeception/module-rest": "^1.0.0",
-"codeception/module-yii2": "^1.0.0",
-"vlucas/phpdotenv": "^5.4"
-```
-
-Add to `scripts` in `vendor-local/apple-news/composer.json`:
-
-```
-"testunit": [
-  "Composer\\Config::disableProcessTimeout",
-  "codecept run unit"
-]
+ddev mysql -uroot -proot
+  create database craft_test;
 ```
 
 ```shell
 ddev ssh --dir /var/www/html/vendor-local/apple-news
+  git checkout 3.0
+  cp .env.example.mysql .env
   composer update
+  composer run testunit
+```
+
+## Playwright
+
+```shell
+ddev npm ci
+ddev exec npx playwright install --with-deps chromium
 ```

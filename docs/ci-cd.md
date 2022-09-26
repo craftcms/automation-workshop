@@ -24,30 +24,6 @@
 - [Synk Workflow](https://github.com/marketplace/actions/snyk)
 - [Discord](https://github.com/appleboy/discord-action)
 
-`.github/workflows/ci.yml`:
-
-```yaml
-on:
-  workflow_dispatch:
-  pull_request:
-  push:
-    branches:
-      - production
-```
-
-### Code coverage
-
-Append to `.github/workflows/ci.yml`:
-
-```yaml
-jobs:
-  code-quality:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: codecov/codecov-action@v3
-```
-
 ### Prettier
 
 Append to `jobs.code-quality.steps`:
