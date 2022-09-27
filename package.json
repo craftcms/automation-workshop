@@ -2,6 +2,8 @@
   "name": "automation-workshop",
   "private": true,
   "devDependencies": {
+    "@playwright/test": "^1.26.0",
     "prettier": "2.7.1"
-  }
+  },
+  "scripts": {}
 }
