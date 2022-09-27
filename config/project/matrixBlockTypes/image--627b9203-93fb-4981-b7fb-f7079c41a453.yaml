@@ -2,11 +2,9 @@ field: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
 fieldLayouts:
   ad9f2509-36fe-49a0-a45d-7cb1d9e90c81:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 5a236b1b-00c7-4038-9264-b4e97830be5f # Image
             instructions: null
             label: null
@@ -17,8 +15,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 1ee0eb29-ceaf-45d6-b31d-d4335d7d001c # Caption
             instructions: null
             label: null
@@ -29,8 +26,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 942f10b8-e7c1-4108-9fc2-c0b240787526 # Position
             instructions: null
             label: null
@@ -100,14 +96,11 @@ fields:
       restrictedLocationSubpath: null
       selectionCondition:
         __assoc__:
-          -
-            - elementType
+          - - elementType
             - craft\elements\Asset
-          -
-            - fieldContext
+          - - fieldContext
             - global
-          -
-            - class
+          - - class
             - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: false
@@ -132,49 +125,33 @@ fields:
     searchable: true
     settings:
       options:
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Left
-            -
-              - value
+            - - value
               - left
-            -
-              - default
+            - - default
               - ''
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Center
-            -
-              - value
+            - - value
               - center
-            -
-              - default
+            - - default
               - ''
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Right
-            -
-              - value
+            - - value
               - right
-            -
-              - default
+            - - default
               - ''
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Full
-            -
-              - value
+            - - value
               - full
-            -
-              - default
+            - - default
               - ''
     translationKeyFormat: null
     translationMethod: none

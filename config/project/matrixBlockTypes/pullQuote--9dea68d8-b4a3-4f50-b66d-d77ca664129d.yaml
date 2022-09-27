@@ -2,11 +2,9 @@ field: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
 fieldLayouts:
   d3b775eb-0988-4710-9911-ed24789059e4:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 4edc15d6-7d35-4fb9-af0e-0dd07d4176ba # Pull Quote
             instructions: null
             label: null
@@ -17,8 +15,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: cfda19f6-1110-4779-a1f3-eb3139f6d55b # Position
             instructions: null
             label: null
@@ -63,38 +60,26 @@ fields:
     searchable: true
     settings:
       options:
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Left
-            -
-              - value
+            - - value
               - left
-            -
-              - default
+            - - default
               - ''
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Center
-            -
-              - value
+            - - value
               - center
-            -
-              - default
+            - - default
               - ''
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Right
-            -
-              - value
+            - - value
               - right
-            -
-              - default
+            - - default
               - ''
     translationKeyFormat: null
     translationMethod: none

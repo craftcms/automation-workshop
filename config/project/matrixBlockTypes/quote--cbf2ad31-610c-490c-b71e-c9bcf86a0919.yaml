@@ -2,11 +2,9 @@ field: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
 fieldLayouts:
   f4f2f9b7-260d-4fc5-9a82-1fcacbfc512f:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 60d2ec68-884d-4556-93c7-059ae103830c # Quote
             instructions: null
             label: null
@@ -17,8 +15,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 789299f8-0aeb-4555-8ceb-6b8f9a027268 # Attribution
             instructions: null
             label: null
@@ -29,8 +26,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 4bf0c4ac-93f4-4124-a602-acf797318279 # Position
             instructions: null
             label: null
@@ -55,27 +51,19 @@ fields:
     searchable: true
     settings:
       options:
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Center
-            -
-              - value
+            - - value
               - center
-            -
-              - default
+            - - default
               - ''
-        -
-          __assoc__:
-            -
-              - label
+        - __assoc__:
+            - - label
               - Full
-            -
-              - value
+            - - value
               - full
-            -
-              - default
+            - - default
               - ''
     translationKeyFormat: null
     translationMethod: none

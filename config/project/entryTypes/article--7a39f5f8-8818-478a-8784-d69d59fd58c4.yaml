@@ -1,11 +1,9 @@
 fieldLayouts:
   cbebb587-8212-43f1-824b-d86bcf4e6ae7:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            autocapitalize: true
+          - autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
@@ -30,8 +28,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 76d19faa-e79e-4b31-96fb-8b8cfdd6813a # Featured?
             instructions: null
             label: null
@@ -42,8 +39,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: d933902b-f4fa-4ad5-8f8d-ae7007c2f35c # Featured Image
             instructions: null
             label: null
@@ -54,8 +50,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: ef56cbc5-4025-4527-b5e0-738658d937a0 # Short Description
             instructions: null
             label: null
@@ -66,8 +61,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: e56edffe-2920-4056-9e5d-87c5b13fc4c2 # Heading
             instructions: null
             label: null
@@ -78,8 +72,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 13f97339-0c1c-414a-94ea-0927daa24137 # Subheading
             instructions: null
             label: null
@@ -90,8 +83,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
             instructions: null
             label: null

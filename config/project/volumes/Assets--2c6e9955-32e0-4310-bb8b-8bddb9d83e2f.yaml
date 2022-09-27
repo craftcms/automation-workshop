@@ -1,11 +1,9 @@
 fieldLayouts:
   bc57fee0-8843-4327-8dbc-68030f642d20:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            autocapitalize: true
+          - autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null

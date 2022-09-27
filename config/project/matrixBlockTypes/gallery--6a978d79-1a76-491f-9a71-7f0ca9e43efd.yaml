@@ -2,11 +2,9 @@ field: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
 fieldLayouts:
   6090dcd3-6dbb-444a-8a05-4fd3392a0c2f:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 5f7e4f6d-4c20-402f-b540-19a74d527a52 # Images
             instructions: null
             label: null
@@ -47,14 +45,11 @@ fields:
       restrictedLocationSubpath: null
       selectionCondition:
         __assoc__:
-          -
-            - elementType
+          - - elementType
             - craft\elements\Asset
-          -
-            - fieldContext
+          - - fieldContext
             - global
-          -
-            - class
+          - - class
             - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: false

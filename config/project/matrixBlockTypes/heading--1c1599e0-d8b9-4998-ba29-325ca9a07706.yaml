@@ -2,11 +2,9 @@ field: 8fee31db-d190-4758-b1e3-f9a7420aa68a # Article Body
 fieldLayouts:
   0bd133c6-8a5c-4da2-a689-124cd4f35b1a:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: 1943ce5d-58b3-45ca-b9c3-aae2a6d73130 # Heading
             instructions: null
             label: null

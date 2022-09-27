@@ -3,16 +3,12 @@ enableVersioning: true
 handle: news
 name: News
 previewTargets:
-  -
-    __assoc__:
-      -
-        - label
+  - __assoc__:
+      - - label
         - 'Primary entry page'
-      -
-        - urlFormat
+      - - urlFormat
         - '{url}'
-      -
-        - refresh
+      - - refresh
         - '1'
 propagationMethod: all
 siteSettings:

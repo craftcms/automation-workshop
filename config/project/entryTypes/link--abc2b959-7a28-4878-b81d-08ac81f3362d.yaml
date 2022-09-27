@@ -1,11 +1,9 @@
 fieldLayouts:
   be2cf232-c499-4179-bd32-f7dfad9feeb6:
     tabs:
-      -
-        elementCondition: null
+      - elementCondition: null
         elements:
-          -
-            autocapitalize: true
+          - autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
@@ -30,8 +28,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: ef56cbc5-4025-4527-b5e0-738658d937a0 # Short Description
             instructions: null
             label: null
@@ -42,8 +39,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: d933902b-f4fa-4ad5-8f8d-ae7007c2f35c # Featured Image
             instructions: null
             label: null
@@ -54,8 +50,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
+          - elementCondition: null
             fieldUid: e957f5b5-7e61-4328-a8c4-c28bd224ec3b # Link URL
             instructions: null
             label: null

@@ -24,14 +24,11 @@ settings:
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
-      -
-        - elementType
+      - - elementType
         - craft\elements\Asset
-      -
-        - fieldContext
+      - - fieldContext
         - global
-      -
-        - class
+      - - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
   showSiteMenu: false
