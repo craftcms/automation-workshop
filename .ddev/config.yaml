@@ -1,4 +1,4 @@
-name: automation-workshop-redux
+name: automation-workshop
 type: php
 docroot: web
 php_version: "8.0"
