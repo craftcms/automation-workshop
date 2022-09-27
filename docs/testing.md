@@ -23,6 +23,6 @@ ddev ssh --dir /var/www/html/vendor-local/apple-news
 ## Playwright
 
 ```shell
-ddev npm ci
-ddev exec npx playwright install --with-deps chromium
+ddev npm init playwright@latest
+
 ```
