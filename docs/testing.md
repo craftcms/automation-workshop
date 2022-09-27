@@ -24,6 +24,27 @@ ddev ssh --dir /var/www/html/vendor-local/apple-news
 
 ```shell
 ddev npm init playwright@latest
+npx playwright install --with-deps webkit
+rm -rf tests-examples
+```
+
+Append to `config.use`:
+
+```
+browserName: ‘webkit’,
+```
+
+```shell
+npx playwright codegen --browser webkit applefakenews.com
+```
+
+### Add screenshot
+
+```js
+  await testInfo.attach(“article”, {
+    body: await page.screenshot({ fullPage: true }),
+    contentType: “image/png”,
+  });
 ```
 
 Append to `jobs` in `.github/workflows/ci.yml`
@@ -50,4 +71,11 @@ e2e:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+```
+
+### Run tests
+
+```shell
+npx playwright test
+npx playwright show-report
 ```
