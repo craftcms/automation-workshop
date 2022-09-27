@@ -27,7 +27,7 @@ touch .lintstagedrc.json
 {
   "*": "prettier --ignore-unknown --write"
 }
-````
+```
 
 `.husky/pre-commit`:
 
@@ -46,3 +46,4 @@ ddev exec npx lint-staged
 
 If using Tower, try setting your Git binary to `usr/local/bin/git` or `opt/homebrew/bin/git`:
 ![Tower's Git binary selection](/automation-workshop/assets/tower-hooks.png)
+````
