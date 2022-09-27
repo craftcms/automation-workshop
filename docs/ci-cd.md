@@ -12,7 +12,7 @@
 ### Security Considerations
 
 - [Preventing pwn requests](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/)
-  - TL;DR: Combining pull_request_target workflow trigger with an explicit checkout of an untrusted PR is a dangerous practice that may lead to repository compromise.
+  - TL;DR: Combining pull_request_target workflow trigger with an explicit checkout of an untrusted PR is a dangerous practice that may lead to repository compromise.
 - [Self-hosted](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners)
   - TL;DR: Using native GH events in your workflow can lead to arbitrary code execution
 - [Dependabot](https://github.com/dependabot)
