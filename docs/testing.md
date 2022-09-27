@@ -24,5 +24,30 @@ ddev ssh --dir /var/www/html/vendor-local/apple-news
 
 ```shell
 ddev npm init playwright@latest
+```
 
+Append to `jobs` in `.github/workflows/ci.yml`
+
+```yaml
+e2e:
+  needs: deploy
+  timeout-minutes: 60
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: "16.x"
+    - name: Install dependencies
+      run: npm ci
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps chromium
+    - name: Run Playwright tests
+      run: npx playwright test
+    - uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
 ```
