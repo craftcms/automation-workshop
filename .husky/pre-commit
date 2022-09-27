@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Add to path for GUIs (Tower, etc.)
+PATH="/usr/local/bin:$PATH"
+
+# If using using nvm and running from host…
+#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+ddev exec npx lint-staged
