@@ -15,7 +15,7 @@ ddev ssh --dir /var/www/html/vendor-local/apple-news
 
 ## Husky & Lint Staged
 
-````shell
+```shell
 ddev exec npx husky-init && npm install
 ddev exec npm install --save-dev lint-staged
 touch .lintstagedrc.json
@@ -46,4 +46,7 @@ ddev exec npx lint-staged
 
 If using Tower, try setting your Git binary to `usr/local/bin/git` or `opt/homebrew/bin/git`:
 ![Tower's Git binary selection](/automation-workshop/assets/tower-hooks.png)
-````
+
+```
+
+```
