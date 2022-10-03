@@ -62,7 +62,7 @@ return static function(ECSConfig $ecsConfig): void {
 ddev ssh --dir /var/www/html/vendor-local/apple-news
     composer update
     composer run phpstan
-    composer require craftcms/redactor:* --dev
+    composer require craftcms/rector:dev-main --dev
     composer config version 3.0.0
     composer config prefer-stable true
     composer config minimum-stability dev
